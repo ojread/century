@@ -5,12 +5,17 @@
     "packages/*"
   ],
   "scripts": {
-    "lint": "eslint ."
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.12.1",
     "eslint-plugin-svelte3": "^2.7.3",
-    "lerna": "^3.22.1"
+    "lerna": "^3.22.1",
+    "prettier": "^2.1.2",
+    "prettier-plugin-svelte": "^1.4.1"
   }
 }
